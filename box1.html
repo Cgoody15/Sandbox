@@ -7,24 +7,7 @@
     <title>This is a Template</title>
     <link rel="stylesheet" href="main.css">
     <style>
-        .div1 {
-            width: 200px;
-            height: 200px;
-            background-color: #D1ECFF;
-            border: 2px dashed;
-            padding: 15px;
-        }
-
-        .div2 {
-            width: 100px;
-            height: 100px;
-            background-color: #FFFFFF;
-            border: 2px ridge #000000;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        #deer {
+        .deer {
             float: left;
             margin: 0 15px 5px 5px;
             border: 1px solid #000000;
@@ -32,6 +15,29 @@
 
         p {
             background-color: greenyellow;
+            font-family: Arial, sans-serif;
+
+        }
+
+        #overflow {
+            width: 250px;
+            height: 100px;
+            overflow: visible;
+            clear: left;
+            background-color: bisque
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 100%;
+        }
+
+        .overflow-demo {
+            width: 250px;
+            height: 100px;
+            overflow: visible;
+            clear: right;
+            float: right;
         }
     </style>
 
@@ -39,16 +45,19 @@
 
 <body>
 
-    <div class="div1">
-        This is the first box.
+
+    <div class="overflow-demo">
+        <img class="deer" src="images/images.jpeg" alt="deer scull" height="250">
+        <p> This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph.This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph.</p>
+
     </div>
-    <img id="deer" src="images/images.jpeg" alt="deer scull" height="250">
-    <p> This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph.This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph. This is supposed to be a ncie long parargraph.</p>
+    <div>
+        <h2>This is a new header.</h2>
+        <p id="overflow">This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.This is a different parargraph.</p>
+    </div>
 
 
-    <div class="div2">
-        This is the second box.
-    </div>
+
 
 
 </body>
